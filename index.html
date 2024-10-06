@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewa Alat Outdoor</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+  
+  <header>
+    <img class="logo" src="Logo.jpg" alt="logo">
+  </header>
+
+<div class="container">
+    <h1>Pilihan Alat Outdoor</h1>
+
+    <div class="product">
+        <img src="Tenda_4-5.jpg" alt="Tenda 4-5 orang">
+        <div class="product-details">
+            <h2>Tenda 4-5 Orang</h2>
+            <p>Harga Sewa: Rp 20.000/hari</p>
+            <p class="p-produk">(klik 2× jika ingin sewa 2 hari dan seterusnya)</p>
+            <button onclick="addToCart('Tenda 4-5 Orang', 20000)">Tambah ke Keranjang</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="Tenda_2-3.jpg" alt="Tenda 2-3 orang">
+        <div class="product-details">
+            <h2>Tenda 2-3 Orang</h2>
+            <p>Harga Sewa: Rp 15.000/hari</p>
+            <p class="p-produk">(klik 2× jika ingin sewa 2 hari dan seterusnya)</p>
+            <button onclick="addToCart('Tenda 2-3 Orang', 15000)">Tambah ke Keranjang</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="Nesting.jpg" alt="Nesting">
+        <div class="product-details">
+            <h2>Nesting</h2>
+            <p>Harga Sewa: Rp 15.000/hari</p>
+            <p class="p-produk">(klik 2× jika ingin sewa 2 hari dan seterusnya)</p>
+            <button onclick="addToCart('Nesting', 15000)">Tambah ke Keranjang</button>
+        </div>
+    </div>
+    
+    <div class="product">
+        <img src="Carier.jpg" alt="Carier 45L">
+        <div class="product-details">
+            <h2>Carier 45L</h2>
+            <p>Harga Sewa: Rp 15.000/hari</p>
+            <p class="p-produk">(klik 2× jika ingin sewa 2 hari dan seterusnya)</p>
+            <button onclick="addToCart('Carier 45L', 15000)">Tambah ke Keranjang</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="Kompor.jpg" alt="Kompor bunga">
+        <div class="product-details">
+            <h2>Kompor bunga</h2>
+            <p>Harga Sewa: Rp 15.000/hari</p>
+            <p class="p-produk">(klik 2× jika ingin sewa 2 hari dan seterusnya)</p>
+            <button onclick="addToCart('Kompor bunga', 15000)">Tambah ke Keranjang</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="Kursi_lipat.jpg" alt="Kursi lipat">
+        <div class="product-details">
+            <h2>Kursi lipat</h2>
+            <p>Harga Sewa: Rp 15.000/hari</p>
+            <p class="p-produk">(klik 2× jika ingin sewa 2 hari dan seterusnya)</p>
+            <button onclick="addToCart('Kursi lipat', 15000)">Tambah ke Keranjang</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="Meja_lipat.jpg" alt="Meja lipat">
+        <div class="product-details">
+            <h2>Meja lipat</h2>
+            <p>Harga Sewa: Rp 15.000/hari</p>
+            <p class="p-produk">(klik 2× jika ingin sewa 2 hari dan seterusnya)</p>
+            <button onclick="addToCart('Meja lipat', 15000)">Tambah ke Keranjang</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="Sleeping_Bag.jpg" alt="Sleeping Bag">
+        <div class="product-details">
+            <h2>Sleeping Bag</h2>
+            <p>Harga Sewa: Rp 15.000/hari</p>
+            <p class="p-produk">(klik 2× jika ingin sewa 2 hari dan seterusnya)</p>
+            <button onclick="addToCart('Sleeping Bag', 15000)">Tambah ke Keranjang</button>
+        </div>
+    </div>
+
+    <!-- Tambahkan produk lainnya di sini -->
+
+    <div class="cart">
+        <h3>Keranjang Sewa</h3>
+        <ul id="cartItems"></ul>
+        <p class="total">Total: Rp <span id="totalPrice">0</span></p>
+        <a id="checkoutLink" class="whatsapp-button" href="#" target="_blank">Checkout via WhatsApp</a>
+    </div>
+</div>
+
+    <!-- Maps -->
+<div class="container-map">
+    <h1 class="map-h1">Lokasi Kami</h1>
+    <p class="map-p">Kunjungi kami di lokasi berikut untuk melihat lebih banyak alat outdoor dan camping yang tersedia:</p>
+
+    <!-- Link Google Maps -->
+    <div class="link-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.1553041097345!2d119.45281399999998!3d-5.393291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbed973999c3ea5%3A0xd033a3ab295ac45!2sTakalar%20outdoor!5e0!3m2!1sid!2sid!4v1728245166718!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
